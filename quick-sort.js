@@ -4,10 +4,10 @@ function quickSort(arr) {
   if (arr.length < 2) return arr;
 
   const pivot = arr[0];
-  let left = [];
-  let right = [];
+  const left = [];
+  const right = [];
 
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 1; i < arr.length; i++) {
     if (arr[i] > pivot) {
       right.push(arr[i]);
     } else {
